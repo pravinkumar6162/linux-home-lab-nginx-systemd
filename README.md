@@ -16,6 +16,11 @@ All services are routed through NGINX under a single host.
 - /api/status → Test API (port 7000)
 - /static/ → Static Website
 
+![Flask Route](screenshots/nginx-flask-route.png)
+![API Route](screenshots/nginx-api-route.png)
+![Static Site](screenshots/nginx-static-site.png)
+
+
 ## Infrastructure Concepts Practiced
 
 - Linux environment setup & directory structure
@@ -31,3 +36,13 @@ All services are routed through NGINX under a single host.
 - Service routing via NGINX
 - systemd service status
 - directory structure
+### NGINX Reverse Proxy Routes
+
+
+
+![Flask Service](screenshots/systemd-flask-service.png)
+![API Service](screenshots/systemd-test-api-service.png)
+
+### Project Structure
+
+![Project Structure](screenshots/project-structure.png)

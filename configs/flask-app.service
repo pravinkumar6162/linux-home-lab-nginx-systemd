@@ -1,0 +1,12 @@
+[Unit]
+Description=Flask Application Service
+After=network.target
+
+[Service]
+User=galvan
+WorkingDirectory=/home/galvan/linux-homelab/flask-app
+ExecStart=/home/galvan/linux-homelab/flask-app/venv/bin/python3 /home/galvan/linux-homelab/flask-app/app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Test API Service
+After=network.target
+
+[Service]
+User=galvan
+WorkingDirectory=/home/galvan/linux-homelab/test-api
+ExecStart=/home/galvan/linux-homelab/test-api/venv/bin/python3 /home/galvan/linux-homelab/test-api/api.py
+Restart=always
+Environment="PATH=/home/galvan/linux-homelab/test-api/venv/bin"
+
+[Install]
+WantedBy=multi-user.target
